@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container-grid {
+  height: 100vh;
+  display: grid;
+  margin: auto;
+  width: min(90%, 80rem);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  align-content: center;
+  gap: 22px 22px;
+}
+
+.img-profile {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+}
+
+.border-purple {
+  border-color: hsl(263, 80%, 66%);
+}
+
+.flex-card-title {
+  display: flex;
+  gap: 15px 15px;
+}
+
+.card-title {
+  font-size: 1.6rem;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.card-description {
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 81%);
+  opacity: 70%;
+  font-weight: 600;
+}
+
+.gray-description {
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+  font-weight: 500;
+}
+
+.gray-text {
+  color: hsl(217, 19%, 35%);
+  font-weight: 500;
+}
+
+.card-profile-white {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-profile-gray {
+  color: hsl(217, 19%, 35%);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.verified-graduate {
+  color: hsl(0, 0%, 81%);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.verified-focus {
+  color: hsl(217, 19%, 35%);
+  opacity: 60%;
+  font-weight: 600;
+}
+
+.card-daniel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  padding: 2rem;
+  background-image: url(bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 20% bottom 100%;
+  background-size: 25%;
+  grid-column: 1 / 3;
+  box-shadow: 1px 3px 3px #282828;
+}
+
+.card-jonathan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 1px 3px 3px #282828;
+}
+
+.card-jeanette {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  grid-row: 2 / 3;
+  box-shadow: 1px 3px 3px #282828;
+}
+
+.card-patrick {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 10px;
+  padding: 2rem;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+  box-shadow: 1px 3px 3px #282828;
+}
+
+.card-kira {
+  display: flex;
+  flex-direction: column;
+  gap: 25px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  box-shadow: 1px 3px 3px #282828;
+}
+
+.attribution {
+  padding: 1.5rem;
+  height: 40px;
+  color: hsl(263, 55%, 52%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282828;
+}
+
+a {
+  color: #fff;
+}
+
+@media (min-width: 375px) and (max-width: 1250px) {
+  .container-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-daniel,
+  .card-jeanette,
+  .card-jonathan,
+  .card-patrick {
+    gap: 20px 20px;
+  }
+
+  .card-daniel {
+    background-position: right 20% bottom 100%;
+    background-size: 30%;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
